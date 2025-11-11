@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio JavaScript y AJAX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Laboratorio JavaScript y AJAX</h1>
+            <p>Resolución de ejercicios de JavaScript y peticiones AJAX</p>
+        </header>
+
+        <!-- Sección JavaScript -->
+        <section class="seccion" id="javascript-section">
+            <h2>Ejercicios JavaScript</h2>
+            
+            <!-- Ejercicio 1: Palíndromos -->
+            <div class="ejercicio">
+                <h3>1. Detector de Palíndromos</h3>
+                <div class="input-group">
+                    <input type="text" id="palindromo-input" placeholder="Ingresa una palabra o frase">
+                    <button onclick="verificarPalindromo()" class="btn">Verificar</button>
+                </div>
+                <div id="palindromo-resultado" class="resultado"></div>
+            </div>
+
+            <!-- Ejercicio 2: Comparar números -->
+            <div class="ejercicio">
+                <h3>2. Comparador de Números</h3>
+                <div class="input-group">
+                    <input type="number" id="numero1" placeholder="Número 1">
+                    <input type="number" id="numero2" placeholder="Número 2">
+                    <button onclick="compararNumeros()" class="btn">Comparar</button>
+                </div>
+                <div id="comparacion-resultado" class="resultado"></div>
+            </div>
+
+            <!-- Ejercicio 3: Encontrar vocales -->
+            <div class="ejercicio">
+                <h3>3. Detector de Vocales</h3>
+                <div class="input-group">
+                    <input type="text" id="frase-vocales" placeholder="Ingresa una frase">
+                    <button onclick="encontrarVocales()" class="btn">Buscar Vocales</button>
+                </div>
+                <div id="vocales-resultado" class="resultado"></div>
+            </div>
+
+            <!-- Ejercicio 4: Contar vocales -->
+            <div class="ejercicio">
+                <h3>4. Contador de Vocales</h3>
+                <div class="input-group">
+                    <input type="text" id="frase-contar-vocales" placeholder="Ingresa una frase">
+                    <button onclick="contarVocales()" class="btn">Contar Vocales</button>
+                </div>
+                <div id="contador-vocales-resultado" class="resultado"></div>
+            </div>
+        </section>
+
+        <!-- Sección AJAX -->
+        <section class="seccion" id="ajax-section">
+            <h2>Ejercicios AJAX</h2>
+            
+            <!-- URL input -->
+            <div class="ejercicio">
+                <h3>Petición AJAX</h3>
+                <div class="input-group">
+                    <label for="url-input">URL:</label>
+                    <input type="text" id="url-input" class="url-input">
+                    <button onclick="realizarPeticionAJAX()" class="btn btn-primary">Mostrar Contenidos</button>
+                </div>
+            </div>
+
+            <!-- Estado de la petición -->
+            <div class="ejercicio">
+                <h3>Estado de la petición</h3>
+                <div id="estado-peticion" class="estado">No iniciada</div>
+            </div>
+
+            <!-- Cabeceras HTTP -->
+            <div class="ejercicio">
+                <h3>Cabeceras HTTP de la respuesta</h3>
+                <div id="cabeceras-respuesta" class="contenedor-cabeceras"></div>
+            </div>
+
+            <!-- Código de estado -->
+            <div class="ejercicio">
+                <h3>Código de estado</h3>
+                <div id="codigo-estado" class="codigo-estado"></div>
+            </div>
+
+            <!-- Contenido de la respuesta -->
+            <div class="ejercicio">
+                <h3>Contenidos de la respuesta</h3>
+                <div id="contenido-respuesta" class="contenido-respuesta"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+      <footer class="footer">
+        <div class="container">
+                 <p>&copy; 2025 Jhoan Talero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
